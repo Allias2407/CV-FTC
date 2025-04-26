@@ -10,7 +10,7 @@
     <!-- google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -20,54 +20,143 @@
       <ul class="menulist">
           <a href="#about-me">About Me</a>
           <a href="#personal-detail">Personal Details</a>
+          <a href="#skills">Skills</a>
           <a href="#experience">Experience</a>
-          <a href="#skill">Skills</a>
           <a href="#contact">Contact</a>
       </ul>
 
       <div class="bx bx-menu" id="menu-icon"></div>
 
     </header>
-
-  <section class="hero"> <!-- CV overview -->
-    <img src="image.png" alt="my image">
+<!-- CV overview -->
+  <section class="hero"> 
+    <img src="/assets/image.png" alt="my image">
     <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Hello, I'm <br> <span class="input"></span></h1>
   </section>
+<!-- About Me -->
+  <section id="about-me"> 
+      <p>Get to Know More</p>
+      <h2>About Me</h2>
+      <div class="section-container">
+        <div class="about-pic">
+          <img src="/assets/meme.jpg" alt="my image" width="400px" height="400px">
+        </div>
 
-  <section> <!-- About Me -->
-      <h2 id="about-me">About Me</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aliquid,
-        corrupti modi unde repellat rerum amet perspiciatis minima qui voluptatem
-        laboriosam facere labore ullam reiciendis recusandae ut optio obcaecati!
-        Ducimus.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        Molestias ratione deserunt qui minima explicabo, ipsam quas, adipisci
-        exercitationem eligendi ducimus maxime officiis dolorem totam quo, quos
-        molestiae reiciendis eaque repudiandae?
-      </p>
+        <div class="about-details-container">
+          <div class="about-container">
+            <div class="detail-container">
+              <h3>Experience</h3>
+              <p>3+ months learning</p>
+            </div>
+            <div class="detail-container">
+              <h3>Experience</h3>
+              <p>3+ months learning</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aliquid,
+              corrupti modi unde repellat rerum amet perspiciatis minima qui voluptatem
+              laboriosam facere labore ullam reiciendis recusandae ut optio obcaecati!
+              Ducimus.Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Molestias ratione deserunt qui minima explicabo, ipsam quas, adipisci
+              exercitationem eligendi ducimus maxime officiis dolorem totam quo, quos
+              molestiae reiciendis eaque repudiandae?
+            </p>
+          </div>
+        </div>
+      </div>
   </section>
 
-  <section class="personal-details"> <!-- Personal Details -->
-      <h2 id="personal-detail">Personal Details</h2>
-      <table class="" cellpadding="10">
-        <tr>
-          <td><strong>Fullname</strong></td>
-          <td>Tran Nguyen Vu Tam</td>
-        </tr>
-        <tr>
-          <td><strong>Date of birth</strong></td>
-          <td>24/07/2006</td>
-        </tr>
-        <tr>
-          <td><strong>University</strong></td>
-          <td>RMIT University</td>
-        </tr>
-        <tr>
-          <td><strong>Major</strong></td>
-          <td>IT</td>
-        </tr>
-      </table>
+<!-- PERSONAL DETAILS -->
+  <section class="personal-detail" id="personal-detail">
+    <h2 class="section__header">My Personal Information</h2>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class='bx bxs-face'></i></span>
+        <h4>Full Name</h4>
+        <p>Tran Nguyen Vu Tam</p>
+      </div>
+      <div class="service__card">
+        <span><i class='bx bxs-calendar' ></i></span>
+        <h4>Date of Birth</h4>
+        <p>24/07/2006</p>
+      </div>
+      <div class="service__card">
+        <span><i class='bx bx-building-house'></i></span>
+        <h4>Born in</h4>
+        <p>Ben Tre Province</p>
+      </div>
+      <div class="service__card">
+        <span><i class='bx bxs-school' ></i></span>
+        <h4>Currently Studing At</h4>
+        <p>RMIT University</p>
+      </div>
+      <div class="service__card">
+        <span><i class='bx bx-book-open' ></i></span>
+        <h4>Majoring</h4>
+        <p>Information Technology</p>
+      </div>
+      <div class="service__card">
+        <span><i class='bx bx-group' ></i></span>
+        <h4>A member of</h4>
+        <p>Fintech-techdept</p>
+      </div>
+    </div>
   </section>
+
+    <!--===== SKILLS =====-->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="skills-container">  
+        <div class="section-skills">       
+          <h2 class="skills-subtitle">Profesional Skills</h2>
+          <p class="skills-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit optio id vero amet, alias architecto consectetur error eum eaque sit.</p>
+          
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-html5 skills__icon'></i>
+              <span class="skills__name">HTML</span>
+            </div>
+            <div class="skills__bar skills__html"></div>
+            <div><span class="skills__percentage">90%</span></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-css3 skills__icon'></i>
+              <span class="skills__name">CSS</span>
+            </div>
+            <div class="skills__bar skills__css"></div>
+            <div><span class="skills__percentage">68%</span></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bxl-javascript skills__icon' ></i>
+              <span class="skills__name">JAVASCRIPT</span>
+            </div>
+            <div class="skills__bar skills__js"></div>
+            <div><span class="skills__percentage">35%</span></div>
+          </div>
+
+          <div class="skills__data">
+            <div class="skills__names">
+              <i class='bx bx-data skills__icon' ></i>
+              <span class="skills__name">SQL</span>
+            </div>
+            <div class="skills__bar skills__sql"></div>
+            <div><span class="skills__percentage">80%</span></div>
+          </div>
+        </div> 
+   
+          <div class="skills-pic">              
+            <img src="/assets/skillimg.jpg" alt="img" class="skills__img">
+          </div>
+        </div>
+      </section>
 
   <section> <!-- Self Reflection -->
       <h2>Self Reflection</h2>
@@ -103,24 +192,6 @@
           </td>
         </tr>
       </table>
-    </section>
-
-    <section> <!-- Experience -->
-      <h2>Experience</h2>
-      <ul>
-        <li>Lorem ipsum dolor sit amet</li>
-        <li>Lorem dolor sit ipsum amet consectetur.</li>
-        <li>Lorem ipsum adipisicing dolor sit amet consectetur .</li>
-      </ul>
-    </section>
-
-    <section> <!-- IT Skills -->
-      <h2>Skills</h2>
-      <ul>
-        <li>JavaScript</li>
-        <li>Python</li>
-        <li>HTML & CSS</li>
-      </ul>
     </section>
 
     <section class="contact"> <!-- Contact -->

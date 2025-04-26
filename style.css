@@ -2,6 +2,12 @@
   /* universal selector */
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -72,6 +78,204 @@ header {
     font-weight: 900;
 }
 
+/* ABOUT ME SECTION */
+#about-me {
+    position: relative;
+    padding: 4rem 10% 0 10%;
+    height: calc(100vh - 4rem);
+    background-color: #ecede8;
+}
+
+.section-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.about-pic {
+    margin: auto 0;
+}
+
+#about-me > p {
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+#about-me > h2{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-pic {
+    margin: auto 0;
+}
+
+.about-container {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container {
+    display: flex;
+}
+
+.detail-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border: rgb(53,53,53) 0.1 rem solid;
+    border-radius: 2rem;
+    border-color: rgb(163,163,163);
+    text-align: center;
+}
+
+/* PERSONAL DETAILS */
+.personal-detail {
+    padding: 4rem 5% 0 5%;
+    background-color: #011b10;
+    height: calc(100vh - 4rem);
+}
+
+.section__header {
+  color: #ecede8;
+  padding-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.service__grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.service__card {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    #e9615e,
+    #ec9956
+  );;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.service__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.service__card h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.service__card p {
+  color: #f3f4f6;
+  line-height: 1rem;
+}
+
+.service__card i {
+  font-size: 2rem;
+}
+
+/* ===== SKILLS =====*/
+#skills {
+    padding: 4rem 5% 0 5%;
+    background-color: #b7bf96;
+    height: calc(100vh - 4rem);
+}
+
+.section-title {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills-container {
+    display: flex;
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    gap: 4rem;
+  }
+
+  .skills-subtitle {
+    margin-bottom: 1rem;
+  }
+
+  .skills-text {
+    margin-bottom: 2rem;
+  }
+
+  .skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+  }
+  .skills__icon {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: hsl(160, 98%, 22%);
+  }
+  .skills__names {
+    display: flex;
+    align-items: center;
+  }
+  .skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #253528;
+    height: 0.25rem;
+    border-radius: 0.5rem;
+  }
+  .skills__html {
+    width: 90%;
+  }
+  .skills__css {
+    width: 68%;
+  }
+  .skills__js {
+    width: 35%;
+  }
+  .skills__sql {
+    width: 80%;
+  }
+
+  .skills-pic {
+    margin: auto 0;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .skills__img {
+    border-radius: 0.5rem;
+    width: 500px;
+  }
+
 .personal-details table, .personal-details td {
     /* table in Personal Details */
    border: 1px double black; 
@@ -90,6 +294,7 @@ header {
     font-size: 20px;
     margin-right: 10px;
   }
+  
   .contact { 
     list-style: none;
   }
@@ -99,6 +304,7 @@ header {
         display: block;
         color: #ecede8;
     }
+
     .menulist {
         position: absolute;
         width: 100%;
@@ -112,13 +318,28 @@ header {
         backdrop-filter: blur(35px);
         transition: all .6s ease-in-out;
     }
+
     .menulist a {
         display: block;
         padding: 0;
         margin: 0px 0px 30px 0px;
         font-size: 2rem;
     }
+
     .menulist.open {
         left: 3rem;
     }
+}
+
+@media (width > 576px) {
+  .service__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (width > 768px) {
+  .service__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
