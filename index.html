@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY CV</title>
+    <title>MY FTC-CV </title>
     <link rel="stylesheet" href="style.css" />
     <!-- box icons link -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -30,8 +30,16 @@
     </header>
 <!-- CV overview -->
   <section class="hero"> 
-    <img src="/assets/image.png" alt="my image">
-    <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Hello, I'm <br> <span class="input"></span></h1>
+    <div class="card"></div>
+    <div class="hero-text">
+      <h1 data-aos="zoom-in-left" data-aos-duration="1400" data-aos-delay="200">Hello, I'm <br> <span class="input"></span></h1>
+      <p>Lorem ipsum dolor, sit am Earum at assumenda incidunt eaque pariatur maxime!</p>
+      <div class="hero-btn">
+        <a href="#about-me">Find out more!</a>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </div>
+    
   </section>
 <!-- About Me -->
   <section id="about-me"> 
@@ -39,7 +47,7 @@
       <h2>About Me</h2>
       <div class="section-container">
         <div class="about-pic">
-          <img src="/assets/meme.jpg" alt="my image" width="400px" height="400px">
+          <img src="/CV-FTC/assets/meme.jpg" alt="my image" width="400px" height="400px">
         </div>
 
         <div class="about-details-container">
@@ -153,56 +161,82 @@
         </div> 
    
           <div class="skills-pic">              
-            <img src="/assets/skillimg.jpg" alt="img" class="skills__img">
+            <img src="/CV-FTC/assets/skillimg.jpg" alt="img" class="skills__img">
           </div>
         </div>
       </section>
 
-  <section> <!-- Self Reflection -->
-      <h2>Self Reflection</h2>
-      <table>
-        <tr>
-          <td><strong>Programming</strong></td>
-          <td>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" disabled>
-            <input type="radio" disabled>
-            <input type="radio" disabled>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Teamwork</strong></td>
-          <td>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" disabled>
-          </td>
-        </tr>
-        <tr>
-          <td><strong>Responsibility</strong></td>
-          <td>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" checked>
-            <input type="radio" checked>
-          </td>
-        </tr>
-      </table>
-    </section>
+    <!--===== EXPERIENCE =====-->
+  <section id="experience">
+    <h2 class="section-title-ex">Experience</h2>
+    <div class="container-ex">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2010</h3>
+              <h1>Heading 1</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2010</h3>
+              <h1>Heading 2</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2010</h3>
+              <h1>Heading 3</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">20th may, 2010</h3>
+              <h1>Heading 4</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur tempora ab laudantium voluptatibus aut eos placeat laborum, quibusdam exercitationem labore.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section class="contact"> <!-- Contact -->
-      <h2>Contact</h2>
-      <ul>
-        <li><a href="#"><i class="bx bxl-facebook"></i>Bi Tran</a></li>
-        <li><a href="#"><i class="bx bxl-instagram-alt"></i>Allias</a></li>
-        <li><a href="#"><i class='bx bxs-phone'></i></i>0999999999</a></li>
-        <li><a href="#"><i class="bx bxl-gmail"></i>sabcsd@gmail.com</a></li>
-      </ul>
-    </section>
+    <footer id="contact">
+      <div class="container">
+        <div class="footer-content">
+          <h3>Contact Me</h3>
+          <p>Email: <br>trannguyenbibi1987@gmail.com</p>
+          <p>Phone: <br>+84 938558550</p>
+          <p>Address: <br>123 Main St, City, Country</p>
+        </div>
+        <div class="footer-content">
+          <h3>Quick Links</h3>
+          <ul class="list">
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#personal-detail">Personal Details</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="footer-content">
+          <h3>Follow Me</h3>
+          <ul class="social-icons">
+            <li><a href="#"><i class="bx bxl-facebook"></i></a></li>
+            <li><a href="#"><i class="bx bxl-instagram-alt"></i></a></li>
+            <li><a href="#"><i class='bx bxs-phone'></i></a></l>
+            <li><a href="#"><i class="bx bxl-gmail"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom-bar">
+        <p>© 2023 Bi Tran. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
