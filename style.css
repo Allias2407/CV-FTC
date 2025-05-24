@@ -348,7 +348,7 @@ header {
 }
 
 .skills__html {
-  width: 90%;
+  width: 80%;
 }
 
 .skills__css {
@@ -356,11 +356,11 @@ header {
 }
 
 .skills__js {
-  width: 35%;
+  width: 25%;
 }
 
 .skills__sql {
-  width: 80%;
+  width: 50%;
 }
 
 .skills-pic {
